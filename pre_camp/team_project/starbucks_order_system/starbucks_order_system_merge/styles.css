@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    background-color: #F9F9F9;
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    color: #296044;
+
+    position: relative;
+    padding: 10px;
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 800;
+
+    color: #296044;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    line-height: 1em;
+    padding-bottom: 15px;
+    text-transform: none;
+    font-size: .1em;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Playfair Display", "Bookman", serif;
+    color: gray;
+    letter-spacing: -0.005em;
+    word-spacing: 1px;
+    letter-spacing: none;
+
+    display: block;
+    font-size: 0.3em;
+    line-height: 1.3;
+
+}
+
+
+h1:after,
+h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 4px;
+    content: "";
+    right: 45px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+h1:before {
+    background-color: #1c714d;
+    left: 45px;
+    width: 90px;
+}
+
+
+
+
+/* 여기에 #menu와 #order-summary의 스타일을 추가하세요. */
+#menu {
+
+    background-color: #fff;
+
+    gap: 20px;
+    padding: 20px;
+
+    max-width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.20);
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+h2:after,
+h2:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #296044;
+    border-top: 1px solid #296044;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
+
+
+#wrap {
+    display: flex;
+    padding: 20px;
+}
+
+.coffee {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menuName {
+    margin-right: 10px;
+}
+
+#menuPrice {}
+
+#addOrder {
+    margin-left: 20px;
+
+    /* float: right; */
+
+}
+
+#order-summary {
+    background-color: #fff;
+
+    gap: 20px;
+    padding: 20px;
+
+    max-width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.20);
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#order-summary p {
+
+    text-align: right;
+    /* background-color: #F9F9F9; */
+
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+    border: none;
+
+    max-width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.09);
+}
+
+/* 버튼과 관련된 스타일은 아래의 예시를 참고하여 완성하세요. */
+
+button {
+    border: none;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 600px;
+    font-size: 15px;
+    background-color: #296044;
+    padding: 10px 50px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 880%;
+    width: 220%;
+    background: #ccc;
+    opacity: 0.5;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+button:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+li {
+
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.remove {
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(183, 78, 71);
+    text-align: right;
+}
+
+#submit-order {
+    text-align: right;
+    background-color: #1c714d;
+}

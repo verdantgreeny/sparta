@@ -1,0 +1,57 @@
+/* 이한솔.ver */
+
+/* 구글 폰트 import 링크 */
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+* {
+    font-family: "Jua", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* 여기에 container 클래스에 대한 스타일을 추가하세요 */
+
+/* 이미지 추가 및 1번만 표기 되도록 */
+.container {
+    background-image: url(https://postfiles.pstatic.net/MjAyMzAxMDFfNDEg/MDAxNjcyNTU2NTUxMDQ2.Pil4Yu28QCI-v5Fw_EvuV0Jz5OKa7YJpmPOYGg47rv4g.9lslJpNKEUuR6_pTw9SG9A-mlhkgsEIKos1DAYu0toog.JPEG.szoxszo/IMG_9176.JPG?type=w966);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+
+    width: 700px;
+    height: 600px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 3px 0px gray;
+}
+
+/* 제목 강조 */
+.container>h1 {
+    color: blueviolet;
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 270px auto 0px auto;
+}
+
+#numbers {
+    padding-top: 10px;
+}
+
+/* 이전번호 꾸미기 */
+#pre {
+    font-size: 70%;
+    color: darkgray;
+}
