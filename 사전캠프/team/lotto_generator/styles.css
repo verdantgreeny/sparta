@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    padding: 40px;
+    width: 400px;
+    background-color: rgb(218, 213, 205);
+    border-radius: 5px;
+    text-align: center
+}
+
+/* 여기에 container 클래스에 대한 스타일을 추가하세요 */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+#pre {
+    margin: 20px auto 0px auto;
+    color: white;
+    font-siae: 12px;
+}
+
+#numbers {
+    margin: 20px auto 0px auto;
+    font-size: 25px;
+}
+
+/* 여기에 numbers ID에 대한 스타일을 추가하세요 */

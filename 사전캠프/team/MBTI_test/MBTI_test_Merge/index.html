@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MBTI테스트</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div class="container">
+      <h1>What's Your Personality Type?</h1>
+      <form id="quiz-form">
+        <!-- 1~3번은 E/I테스트 name 및 value 확인 : 장미경 -->
+        <div class="question">
+          <p>
+            Q1. 오랜만에 친구와 만나 놀던 중에, 친구의 친구가 같이 놀아도 되냐고
+            물어보는데?
+          </p>
+          <label
+            ><input type="radio" name="q1" value="E" /> 당연히 되지! 오늘부터
+            너도 내 친구다.
+          </label>
+          <label
+            ><input type="radio" name="q1" value="I" /> 어어….?(안돼. 절대
+            싫어)</label
+          >
+        </div>
+
+        <div class="question">
+          <p>
+            Q2. 아파서 일주일간 밖에도 못나가고 강제로 집에서 쉬어야 한다면?
+          </p>
+          <label
+            ><input type="radio" name="q2" value="E" /> 이게 바로 창살 없는
+            감옥?</label
+          >
+          <label
+            ><input type="radio" name="q2" value="I" /> 합법적 약속 취소 가능ㅋ
+            오히려 좋아~</label
+          >
+        </div>
+
+        <div class="question">
+          <p>Q3. 약속이 없는 날. 집에서 폰할때 나는…?</p>
+          <label
+            ><input type="radio" name="q3" value="E" /> 집에 있어도 카톡 칼답.
+            카톡으로 부족할 땐 통화도 함</label
+          >
+          <label
+            ><input type="radio" name="q3" value="I" /> 카톡 와도 흐린눈하고 내
+            취미 즐기기</label
+          >
+        </div>
+        <!-- 4~6번은 S/N테스트 name 및 value 확인 : 유경민 -->
+        <div class="question">
+          <p>Q4.죽으면 어떻게 될까?</p>
+          <label
+            ><input type="radio" name="q4" value="S" /> 죽으면 죽는거지 쩔수없
+          </label>
+          <label
+            ><input type="radio" name="q4" value="N" /> 죽으면 사후세계나
+            천국지옥이 있나?
+          </label>
+        </div>
+        <div class="question">
+          <p>Q5.친구가 벚꽃 사진을 보낼때?</p>
+          <label
+            ><input type="radio" name="q5" value="S" /> 와 이쁘다 많이
+            폈네</label
+          >
+          <label
+            ><input type="radio" name="q5" value="N" /> 봄이구나 연애의 계절이네
+          </label>
+        </div>
+        <div class="question">
+          <p>Q6.아무 생각도 하지마</p>
+          <label
+            ><input type="radio" name="q6" value="S" /> 멍때리기 쉽게
+            가능</label
+          >
+          <label
+            ><input type="radio" name="q6" value="N" /> 생각을 안하는걸 어떻게
+            하는거지</label
+          >
+        </div>
+        <!-- 7~9번은 F/T테스트 name 및 value 확인 : 이한솔 -->
+        <div class="question">
+          <p>Q7. 친구가 나 몰래 내 욕을 했다는 사실을 알게 되었다.</p>
+          <label
+            ><input type="radio" name="q7" value="F" /> 친구가 어떻게 나한테...
+            상처받는다.</label
+          >
+          <label
+            ><input type="radio" name="q7" value="T" /> 그래서 뭐가 불만이였대?
+            궁금하다.</label
+          >
+        </div>
+        <div class="question">
+          <p>Q8. 오늘은 너무 힘들어서 일기를 적어 남겨야겠다.</p>
+          <label
+            ><input type="radio" name="q8" value="T" /> 오늘 나에게 있었던
+            일들을 위주로 적는다.</label
+          >
+          <label
+            ><input type="radio" name="q8" value="F" /> 오늘 느꼈던 기분을
+            위주로 적는다.</label
+          >
+        </div>
+        <div class="question">
+          <p>Q9.누군가 갑자기 나에게 선물을 주었다.</p>
+          <label
+            ><input type="radio" name="q9" value="T" /> 이걸 어디에 써야할지
+            고민된다.
+          </label>
+          <label
+            ><input type="radio" name="q9" value="F" /> 갑자기 선물을..?
+            감동한다.</label
+          >
+        </div>
+        <!-- 10~12번은 J/P테스트 name 및 value 확인 : 최수진 -->
+        <div class="question">
+          <p>Q10.시험공부 어떻게 해?</p>
+          <label
+            ><input type="radio" name="q10" value="J" /> 하루에 50페이지 정도
+            정독하고 문제집 2회차씩 풀고 있어
+          </label>
+          <label
+            ><input type="radio" name="q10" value="P" /> 응? 아직 안했는데..3일
+            전부터 할래ㅎㅎ
+          </label>
+        </div>
+
+        <div class="question">
+          <p>Q11.뭐해? 심심한데 나와</p>
+          <label
+            ><input type="radio" name="q11" value="J" /> 앗..나 지금 뭐 하고
+            있어서 나가기 어려운데ㅠㅠ 다음엔 미리 말해줘.
+          </label>
+          <label
+            ><input type="radio" name="q11" value="P" /> 오!! 나 머리 안감긴
+            했는데 모자 쓰고 나갈게
+          </label>
+        </div>
+
+        <div class="question">
+          <p>Q12. 우리 토요일에 만나자!</p>
+          <label
+            ><input type="radio" name="q12" value="J" /> 그래! 어디서 몇 시에
+            볼까? 식당은 여기가 맛있대~
+          </label>
+          <label
+            ><input type="radio" name="q12" value="P" /> 그래!(약속 당일에 시간,
+            장소를 정한다)
+          </label>
+        </div>
+        <button onclick="calculateResult()" id="submit-button" type="button">
+          결과 확인하기
+        </button>
+      </form>
+      <div id="result" class="hide">
+        <h2>당신의 성격 유형은?</h2>
+        <p id="result-text">결과가 여기에 표시됩니다.</p>
+        <button onclick="resetQuiz()">다시 시작하기</button>
+      </div>
+    </div>
+  </body>
+</html>

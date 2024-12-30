@@ -1,0 +1,124 @@
+/* css 장미경.ver */
+/* 구글 폰트 import */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gowun+Dodum&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Single+Day&display=swap');
+
+/* 기본 글꼴 */
+* {
+  font-family: "Hahmlet", serif;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 제목 수정 */
+h1 {
+  font-size: 36px;
+  margin-bottom: 26px;
+  color: blueviolet;
+}
+
+.question {
+  margin-bottom: 20px;
+  text-align: left;
+
+  /* 정렬 추가 */
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.question p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+label {
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* 라디오 버튼에 마오스올렸을 때 커서 모양 변경 */
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+#submit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+/* 버튼에 마우스 커서 올렸을 때 더 짙은 파란계열로 색상 변경 */
+#submit-button:hover {
+  background-color: #0041ce;
+}
+
+#result {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #fafafaec;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#result h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#result p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* 재시작 버튼 꾸미기기 */
+#result button {
+  background-color: #dfccff;
+  color: #333;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#result button:hover {
+  background-color: #7f38fada;
+  color: #e9e9e9;
+}
+
+/* 결과값 미리보이지 않도록 숨기기 */
+.hide {
+  display: none;
+}
