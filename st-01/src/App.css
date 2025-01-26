@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 33px;
+}
+
+.medal-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  gap: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-wrapper > input {
+  width: 150px;
+}
+
+.medal-item {
+  margin: 10px;
+}
+
+.radio {
+  margin: 10px;
+}
+
+span {
+  padding: 10px;
+  margin: 10px;
+}
