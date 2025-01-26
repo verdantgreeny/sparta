@@ -1,8 +1,10 @@
-import {useState} from "react";
+import { useState } from "react";
+import Button from "./Button";
+import Radio from "./Radio";
 
 const MedalList = ({ medals, setMedals }) => {
-  const handleDelete = function (country) {
-    const newMedalList = medals.filter((medal) => medal.country !== country);
+  const handleDelete = function (id) {
+    const newMedalList = medals.filter((medal) => medal.id !== id);
     setMedals(newMedalList);
   };
 
@@ -24,35 +26,34 @@ const MedalList = ({ medals, setMedals }) => {
   return (
     <>
       <div className="radio">
-        <label>
-          <input
-            type="radio"
-            value="gold"
-            checked={sortType === "gold"}
-            onChange={(e) => setSortType(e.target.value)}
-          />
+        <Radio
+          type="radio"
+          value="gold"
+          checked={sortType === "gold"}
+          onChange={(e) => setSortType(e.target.value)}
+        >
           금메달 순
-        </label>
-        <label>
-          <input
-            type="radio"
-            value="total"
-            checked={sortType === "total"}
-            onChange={(e) => setSortType(e.target.value)}
-          />
-          총 메달 순
-        </label>
+        </Radio>
+
+        <Radio
+          type="radio"
+          value="total"
+          checked={sortType === "total"}
+          onChange={(e) => setSortType(e.target.value)}
+       >
+            총 메달 순
+        </Radio>
       </div>
       {/* 🟢 메달 리스트 - 추가된 국가와 메달 정보를 표시 */}
       <ul className="medal-list">
-        {getSortedMedals().map((medal, index) => (
-          <li key={index} className="medal-item">
+        {getSortedMedals().map((medal) => (
+          <li key={medal.id} className="medal-item">
             <span>{medal.country}</span>
             <span>금: {medal.gold}</span>
             <span>은: {medal.silver}</span>
             <span>동: {medal.bronze}</span>
             {/* 🟠 삭제 버튼 */}
-            <button onClick={() => handleDelete(medal.country)}>삭제</button>
+            <Button onClick={() => handleDelete(medal.id)}>삭제</Button>
           </li>
         ))}
       </ul>
