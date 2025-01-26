@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Input from "./Input";
-import Button from "./Button"
+import Button from "./Button";
 
 const MedalForm = ({ medals, setMedals }) => {
   const [country, setCountry] = useState(""); // 나라 이름을 저장
@@ -16,7 +16,7 @@ const MedalForm = ({ medals, setMedals }) => {
     setBronze("");
   };
 
-    // 입력처리의 적정성 검증
+  // 입력처리의 적정성 검증
   const verifyInput = (country, gold, silver, bronze) => {
     if (!country || Number(country)) {
       alert("국가이름을 입력해주세요");
@@ -57,14 +57,17 @@ const MedalForm = ({ medals, setMedals }) => {
       resetForm();
       return false;
     }
+
     const addedMedal = medals.find(
       (medal) => medal.country === newMedal.country
     );
+
     if (addedMedal) {
       alert("이미 등록된 국가입니다.");
       resetForm();
       return false;
     }
+    
     setMedals([...medals, newMedal]); // 새로운 메달 데이터를 기존 리스트에 추가
     resetForm(); // 입력 필드 초기화
   };

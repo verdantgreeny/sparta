@@ -3,6 +3,7 @@ import Button from "./Button";
 import Radio from "./Radio";
 
 const MedalList = ({ medals, setMedals }) => {
+  
   const handleDelete = function (id) {
     const newMedalList = medals.filter((medal) => medal.id !== id);
     setMedals(newMedalList);
